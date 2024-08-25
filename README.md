@@ -1,4 +1,4 @@
 # CODSOFT
-Codesoft internship
+Codesoft internship - python programming
 
 Author Sowjanya M

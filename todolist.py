@@ -36,7 +36,7 @@ def update_alltask(i, completed):
     else:
         print("Invalid task index i.")
 
-def delete_task(i):
+def remove_task(i):
     tasks = load_tasktoenter()
     if 0 <= i < len(tasks):
         tasks.pop(i)
@@ -50,7 +50,7 @@ def category_main():
         print("1. List task")
         print("2. Add task")
         print("3. Update task")
-        print("4. Delete task")
+        print("4. Remove task")
         print("5. logout")
         choice = input("Choose any option Number: ")
 
@@ -66,8 +66,8 @@ def category_main():
             update_alltask(i, completed)
         elif choice == '4':
             list_alltask(load_tasktoenter())
-            i= int(input("Enter task number to delete: ")) - 1
-            delete_task(i)
+            i= int(input("Enter task number to remove: ")) - 1
+            remove_task(i)
         elif choice == '5':
             break
         else:
@@ -75,4 +75,3 @@ def category_main():
 
 if __name__ == "__main__":
     category_main()
-
